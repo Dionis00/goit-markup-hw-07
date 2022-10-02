@@ -1,0 +1,111 @@
+.page-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.menu__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--title-color);
+    display: flex;
+
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+}
+
+.menu__link.active {
+    color: var(--accent-color);
+
+    &::after {
+            content: '';
+            height: 4px;
+            width: 100%;
+            background-color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            border-radius: 4px;
+        }
+    &::after {
+        width: 100%;
+    }
+}
+
+
+/*================header_link=====================*/
+.contacts {
+    display: flex;
+    align-items: center;
+
+    & a:hover,
+    & a:focus {
+            color: var(--accent-color);
+        }
+}
+
+
+
+.mail__contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--text-color);
+    margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    fill: currentColor;
+    display: flex;
+    align-items: center;
+}
+
+.phone__number {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--text-color);
+    fill: currentColor;
+    display: flex;
+    align-items: center;
+
+}
+
+.link-img {
+    margin-right: 10px;
+}

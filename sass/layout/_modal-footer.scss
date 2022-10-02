@@ -1,0 +1,61 @@
+.modal-footer {
+    width: 570px;
+    height: 86px;
+}
+
+.modal-footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.modal-form-footer {
+    display: flex;
+}
+
+.modal-form-footer-name {
+    margin-right: 12px;
+}
+
+.modal-form-footer-input {
+    color: var(--white-color);
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding-left: 16px;
+    background-color: var(--background-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-submit-footer {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    padding: 10px 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--white-color);
+    background: var(--button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+
+    &hover,
+    &focus {
+            background: var(--button-color-hover);
+        }
+}
+
+.modal-footer-subscribe {
+    height: 24px;
+    width: 24px;
+    fill: var(--white-color);
+    margin-left: 10px;
+}
